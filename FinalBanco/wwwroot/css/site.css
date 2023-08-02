@@ -1,0 +1,73 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.layout {
+    width: 1366px;
+    height: 768px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.acontainer {
+    position: relative;
+    width: 100px;
+    height: 80px;
+    
+}
+
+
+.acontainer::before {
+    content: attr(data-nombre);
+    position: absolute;
+    left: 0;
+    width: 120px; /* Ajusta el ancho del texto, haciéndolo más rectangular */
+    padding: 8px; /* Ajusta el relleno para que el texto tenga más espacio alrededor */
+    background-color: rgba(0, 0, 0, 0.8); /* Cambia el color de fondo del texto */
+    color: white; /* Cambia el color del texto */
+    font-size: 14px; /* Ajusta el tamaño de fuente del texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; /* Añade bordes redondeados al texto para hacerlo más rectangular */
+    opacity: 0;
+    z-index: 999;
+    transition: opacity 0.5s;
+}
+
+
+.acontainer:hover::before {
+    opacity: 1;
+}
+
+
+.centered-element {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#centerh {
+    position: absolute;  
+    transform: translateY(-50%);
+    text-align: center;
+}

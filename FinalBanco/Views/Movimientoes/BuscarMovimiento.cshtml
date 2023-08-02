@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Buscar Movimiento";
+}
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+
+        <h1 class="display-4">Buscar Movimiento</h1>
+      
+        <br /> <br />
+        <form action="@Url.Action("VerMovimiento","Movimientoes")" method="post" class="form_conteiner">
+            <div class="container ">
+                
+                <input type="text" name="detalle" class="input_user" value="" placeholder="detalle">
+
+                <input type="date" name="fecha" class="input_user" value="">
+                
+
+                <input type="number" name="monto" class="input_user" value="" placeholder="monto">
+              
+                <button type="submit" id="button" class="btn login_btn btn-primary" name="button">Buscar</button>
+                
+                <div class="login-error">
+                    @ViewBag.Error
+                    
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+</div>

@@ -1,0 +1,86 @@
+﻿@model IEnumerable<FinalBanco.Models.PlazoFijo>
+
+
+@{
+    ViewData["Title"] = "Listado Plazos Fijos";
+}
+
+<h1>Details</h1>
+<p>
+    <a asp-controller="PlazoFijoes" asp-action="crearPlazoFijo" class="acontainer" data-nombre="Crear un nuevo plazo fijo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+        </svg>
+    </a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model._id_plazoFijo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model._cbu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model._fechaIni)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model._fechaFin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model._monto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model._pagado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model._tasa)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item._id_plazoFijo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item._cbu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item._fechaIni)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item._fechaFin)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item._monto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item._pagado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item._tasa)
+                </td>           
+                <td>
+                    <a asp-controller="PlazoFijoes" asp-action="BajaPlazoFijo" asp-route-id="@item._id_plazoFijo" class="acontainer" data-nombre="Dar baja">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                            <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
+                        </svg>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class=" alert-danger">
+    @ViewBag.PF
+</div>
+<div class=" alert-success">
+    @ViewBag.PF_OK
+</div>

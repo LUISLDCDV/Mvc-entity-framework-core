@@ -1,0 +1,79 @@
+﻿@model IEnumerable<FinalBanco.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Listado de Usuarios Titulares";
+}
+
+<h1>Listado de Usuarios de caja </h1>
+
+<p>
+    <h3>Agregar Titular a caja </h3>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
+        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+        <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z" />
+    </svg>
+    <form action="@Url.Action("AgregarTitular", "CajaDeAhorroes")" method="post" class="form_conteiner" id="formt">
+        <div class="form-group">
+            <hr />            
+            <input type="text" name="_dni" class="input_user" value="" placeholder="Ingrese Dni Usuario">  
+            <button type="submit" id="button" class="btn login_btn btn-primary" name="button">Confirmar</button>
+        </div>
+    </form>
+    <div class=" alert-danger">
+        @ViewBag.ET
+    </div>
+
+ 
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Dni
+            </th>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Apellido
+            </th>
+            <th>
+                Email
+            </th>           
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item._dni)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item._nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item._apellido)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item._mail)
+                </td>
+
+                <td>
+                    <a asp-controller="CajaDeAhorroes" asp-action="EliminarTitular" asp-route-id="@item._id_usuario" class="acontainer" data-nombre="Eliminar Titular">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-dash" viewBox="0 0 16 16">
+                          <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM11 12h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Zm0-7a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+                          <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"/>
+                        </svg>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class=" alert-danger">
+    @ViewBag.ErrorU
+</div>
+<div class=" alert-success">
+    @ViewBag.Info
+</div>

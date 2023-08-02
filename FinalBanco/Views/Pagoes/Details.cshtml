@@ -1,0 +1,54 @@
+﻿@model FinalBanco.Models.Pago
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Pago</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model._usuario)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model._usuario._id_usuario)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model._monto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model._monto)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model._pagado)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model._pagado)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model._metodo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model._metodo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model._detalle)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model._detalle)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model._id_metodo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model._id_metodo)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?._id_pago">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

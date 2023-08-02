@@ -1,0 +1,81 @@
+﻿@model IEnumerable<FinalBanco.Models.TarjetaDeCredito>
+
+@{
+    ViewData["Title"] = "tarjetas del cliente";
+}
+
+<h1>Details</h1>
+<a asp-controller="TarjetaDeCreditoes" asp-action="altaTarjeta" class="acontainer" data-nombre="Crear nueva tarjeta">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+    </svg>
+</a>
+<div>
+    <h4>TarjetaDeCredito</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model._titular)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model._numero)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model._codigoV)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model._limite)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model._consumos)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._titular._id_usuario)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._numero)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._codigoV)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._limite)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._consumos)
+                    </td>
+                    <td>
+                        <a asp-action="PagarConsumo" asp-route-id="@item._id_tarjeta" class="acontainer" data-nombre="Pagar Consumo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-credit-card-fill" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0V4zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7H0zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1z" />
+                            </svg>
+                        </a>
+                    </td>
+                    <td>
+                        <a asp-action="bajaTarjeta" asp-route-id="@item._id_tarjeta" class="acontainer" data-nombre="Delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
+                            </svg>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class=" alert-danger">
+        @ViewBag.ETAR
+    </div>
+    <div class=" alert-success">
+        @ViewBag.OKTAR
+    </div>
+</div>

@@ -1,0 +1,62 @@
+﻿@model FinalBanco.Models.PlazoFijo
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>PlazoFijo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="_id_usuario" class="control-label"></label>
+                <select asp-for="_id_usuario" class ="form-control" asp-items="ViewBag._id_usuario"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="_monto" class="control-label"></label>
+                <input asp-for="_monto" class="form-control" />
+                <span asp-validation-for="_monto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="_fechaIni" class="control-label"></label>
+                <input asp-for="_fechaIni" class="form-control" />
+                <span asp-validation-for="_fechaIni" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="_fechaFin" class="control-label"></label>
+                <input asp-for="_fechaFin" class="form-control" />
+                <span asp-validation-for="_fechaFin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="_tasa" class="control-label"></label>
+                <input asp-for="_tasa" class="form-control" />
+                <span asp-validation-for="_tasa" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="_pagado" /> @Html.DisplayNameFor(model => model._pagado)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="_cbu" class="control-label"></label>
+                <input asp-for="_cbu" class="form-control" />
+                <span asp-validation-for="_cbu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

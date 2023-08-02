@@ -1,0 +1,79 @@
+﻿@model FinalBanco.Models.Usuario
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Usuario</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Editar">
+
+            <div class="form-group visually-hidden">
+                <label asp-for="_id_usuario" class="control-label"></label>
+                <input asp-for="_id_usuario" />
+                <span asp-validation-for="_id_usuario" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="_dni" class="control-label"></label>
+                <input asp-for="_dni" class="form-control" />
+                <span asp-validation-for="_dni" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="_nombre" class="control-label"></label>
+                <input asp-for="_nombre" class="form-control" />
+                <span asp-validation-for="_nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="_apellido" class="control-label"></label>
+                <input asp-for="_apellido" class="form-control" />
+                <span asp-validation-for="_apellido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="_mail" class="control-label"></label>
+                <input asp-for="_mail" class="form-control" />
+                <span asp-validation-for="_mail" class="text-danger"></span>
+            </div>
+            <div class="form-group visually-hidden">
+                <label asp-for="_password" class="control-label"></label>
+                <input asp-for="_password" class="form-control" />
+                <span asp-validation-for="_password" class="text-danger"></span>
+            </div>
+            <div class="form-group visually-hidden">
+                <label asp-for="_intentosFallidos" class="control-label"></label>
+                <input asp-for="_intentosFallidos" class="form-control" />
+                <span asp-validation-for="_intentosFallidos" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="_esUsuarioAdmin" value="1" /> @Html.DisplayNameFor(model => model._esUsuarioAdmin)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="_bloqueado" /> @Html.DisplayNameFor(model => model._bloqueado)
+                </label>
+            </div>
+            <div class="form-group visually-hidden">
+                <label asp-for="_segmento" class="control-label"></label>
+                <input asp-for="_segmento" class="form-control" />
+                <span asp-validation-for="_segmento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Editar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

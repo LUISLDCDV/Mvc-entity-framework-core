@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "acces Page";
+}
+
+<div class="text-center">
+   <h1 class="display-4">INICIO DE SECIÓN</h1>
+    <br />
+    <br />
+   <div class="conteiner h-100">
+       <form action="@Url.Action("verificarLogueo","Acceso")" method="post" class="form_conteiner">
+            <div class="">
+                <div class="">                    
+                    <input type="number" name="_dni" class="input_user" value="" placeholder="DNI">
+                </div>
+                <br />
+                <div class="">
+                    <input type="password" name="_password" class="input_user" value="" placeholder="Clave">
+                </div>
+            </div>  
+            <br />
+            <button type="submit" id="button" class="btn login_btn btn-primary" name="button">Iniciar Secion</button>
+            <div class=" alert-danger">
+                @ViewBag.ErrorU
+            </div>
+            <div class=" alert-success">
+                @ViewBag.Info
+            </div>
+        </form>
+        
+   </div>
+    <br />
+    <br />
+   <div>
+        <p>si no tienes cuenta puedes <a href="@Url.Action("Registrar","Usuarios")">Registrarte</a>.</p>
+   </div>
+</div>
+
+

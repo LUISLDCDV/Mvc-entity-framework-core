@@ -1,0 +1,52 @@
+﻿@model IEnumerable<FinalBanco.Models.Movimiento>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="BuscarMovimiento" class="acontainer" data-nombre="Buscar Movimiento">        
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+        </svg>
+    </a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model._cajaDeAhorro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model._detalle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model._monto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model._fecha)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item._cajaDeAhorro._cbu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item._detalle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item._monto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item._fecha)
+            </td>            
+        </tr>
+}
+    </tbody>
+</table>

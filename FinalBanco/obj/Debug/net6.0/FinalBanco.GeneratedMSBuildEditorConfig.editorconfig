@@ -1,0 +1,221 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FinalBanco
+build_property.RootNamespace = FinalBanco
+build_property.ProjectDir = C:\Users\54911\source\repos\FinalBanco\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\54911\source\repos\FinalBanco
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Acceso/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/CajaDeAhorroes/AgregarTitular.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FqYURlQWhvcnJvZXNcQWdyZWdhclRpdHVsYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/CajaDeAhorroes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FqYURlQWhvcnJvZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/CajaDeAhorroes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FqYURlQWhvcnJvZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/CajaDeAhorroes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FqYURlQWhvcnJvZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/CajaDeAhorroes/DetalleCajaCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FqYURlQWhvcnJvZXNcRGV0YWxsZUNhamFDbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/CajaDeAhorroes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FqYURlQWhvcnJvZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/CajaDeAhorroes/EditarTitulares.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FqYURlQWhvcnJvZXNcRWRpdGFyVGl0dWxhcmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/CajaDeAhorroes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FqYURlQWhvcnJvZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/CajaDeAhorroes/Transacciones.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FqYURlQWhvcnJvZXNcVHJhbnNhY2Npb25lcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Home/VistaAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaXN0YUFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Movimientoes/BuscarMovimiento.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b2VzXEJ1c2Nhck1vdmltaWVudG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Movimientoes/DetalleMovimientosCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b2VzXERldGFsbGVNb3ZpbWllbnRvc0NsaWVudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Movimientoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Movimientoes/MostrarMovimientos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b2VzXE1vc3RyYXJNb3ZpbWllbnRvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Movimientoes/VerMovimiento.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1pZW50b2VzXFZlck1vdmltaWVudG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Pagoes/crearPAGO.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb2VzXGNyZWFyUEFHTy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Pagoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Pagoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb2VzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Pagoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Pagoes/DetallePagosCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb2VzXERldGFsbGVQYWdvc0NsaWVudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Pagoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Pagoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Pagoes/PagoPorCaja.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb2VzXFBhZ29Qb3JDYWphLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Pagoes/PagoTarjeta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb2VzXFBhZ29UYXJqZXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/PlazoFijoes/crearPlazoFijo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhem9GaWpvZXNcY3JlYXJQbGF6b0Zpam8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/PlazoFijoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhem9GaWpvZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/PlazoFijoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhem9GaWpvZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/PlazoFijoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhem9GaWpvZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/PlazoFijoes/DetallePlazoFijoCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhem9GaWpvZXNcRGV0YWxsZVBsYXpvRmlqb0NsaWVudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/PlazoFijoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhem9GaWpvZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/TarjetaDeCreditoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyamV0YURlQ3JlZGl0b2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/TarjetaDeCreditoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyamV0YURlQ3JlZGl0b2VzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/TarjetaDeCreditoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyamV0YURlQ3JlZGl0b2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/TarjetaDeCreditoes/DetalleTarjetaCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyamV0YURlQ3JlZGl0b2VzXERldGFsbGVUYXJqZXRhQ2xpZW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/TarjetaDeCreditoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyamV0YURlQ3JlZGl0b2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/TarjetaDeCreditoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyamV0YURlQ3JlZGl0b2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/TarjetaDeCreditoes/PagarConsumo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyamV0YURlQ3JlZGl0b2VzXFBhZ2FyQ29uc3Vtby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Usuarios/DetalleUsuarioCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWxsZVVzdWFyaW9DbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Usuarios/registrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NccmVnaXN0cmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/54911/source/repos/FinalBanco/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3khi4ynj58

@@ -1,0 +1,52 @@
+﻿@model FinalBanco.Models.Usuario
+
+@{
+    ViewData["Title"] = "Agregar Titular";
+}
+
+<h1>Delete</h1>
+
+<h3>Esta seguro que desea agregar este titular?</h3>
+<div>
+    <h4>Usuario</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model._dni)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model._dni)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model._nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model._nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model._apellido)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model._apellido)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model._mail)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model._mail)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model._bloqueado)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model._bloqueado)
+        </dd>
+    </dl>
+
+    <form asp-action="ConfirmarAgregadoTitular">
+        <input type="hidden" asp-for="_id_usuario" />
+        <input type="submit" value="Confirmar" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
+

@@ -1,0 +1,39 @@
+﻿@model FinalBanco.Models.Pago
+
+
+@{
+    ViewData["Title"] = "GENERAR PAGO";
+}
+
+<h1>GENERAR FACTURA</h1>
+
+<h4>pantalla para crear un nuevo pago</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form action="@Url.Action("definirMEDIOPAGO","Pagoes")" method="post" class="form_conteiner" id="formt">
+            <br /> <br />
+            <div id="centerh">
+                <input type="number" name="monto" class="input_user" value="" placeholder="Ingrese el monto">
+                         
+                <input type="text" name="detalle" class="input_user" value="" placeholder="Ingrese detalle">
+                
+                <select name="metodo" >
+                    <option value="0">Seleccione la operacion:</option>
+                    <option value="1">CAJA</option>
+                    <option value="2">TARJETA</option>                        
+                </select>              
+                    
+                <button type="submit" id="button" class="btn login_btn btn-primary" name="button">Confirmar</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class=" alert-danger">
+    @ViewBag.EP
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

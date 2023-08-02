@@ -1,0 +1,53 @@
+﻿@model IEnumerable<FinalBanco.Models.Movimiento>
+
+@{
+    ViewData["Title"] = "Resultado de Busqueda";
+}
+
+<h1>Resultado de Busqueda</h1>
+
+<div>
+    <h4>Movimiento</h4>
+    <hr />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model._id_Movimiento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model._detalle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model._monto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model._fecha)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._id_Movimiento)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._detalle)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._monto)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._fecha)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+

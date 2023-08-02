@@ -1,0 +1,38 @@
+﻿@model FinalBanco.Models.Usuario
+
+@{
+    ViewData["Title"] = "Detalle de usuario";
+}
+
+<h1>Detalle de usuario</h1>
+
+<div>
+    <h4>Usuario  - @Html.DisplayFor(model => model._nombre)</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model._dni)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model._dni)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model._nombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model._nombre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model._apellido)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model._apellido)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model._mail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model._mail)
+        </dd>
+    </dl>
+</div>

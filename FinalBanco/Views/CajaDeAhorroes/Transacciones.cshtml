@@ -1,0 +1,56 @@
+﻿@model FinalBanco.Models.CajaDeAhorro
+
+@{
+    ViewData["Title"] = "TRANSACCIONES";
+
+}
+
+<h1>TRANSACCIONES</h1>
+
+<h4>transaccion a realizar en cuenta</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form action="@Url.Action("RealizarTransaccion", "CajaDeAhorroes")" method="post" class="form_conteiner" id="formt">
+            <div class="form-group">            
+               
+                <dl class="row">
+                    <dt class="col-sm-10">
+                        @Html.DisplayNameFor(model => model._id_caja)
+                    </dt>
+                    <dd class="col-sm-10" >
+                        @Html.DisplayFor(model => model._id_caja)
+                    </dd>  
+                </dl>
+                <hr />
+            </div>
+            <br /> <br />
+            <div id="centerh">
+                
+                <input type="number" name="_monto" class="input_user" value="" placeholder="Ingrese el monto">           
+                                
+                <select name="_operacion" id ="option">
+                    <option value="0">Seleccione la operacion:</option>
+                    <option value="1">Extraccion</option>
+                    <option value="2">Deposito</option>
+                    <option value="3">Transferencia</option>
+                </select>  
+                
+                 <input type="text" name="_CbuAt" class="input_user" value="" placeholder="Ingrese cbu a transferir">
+          
+
+                <button type="submit" id="button" class="btn login_btn btn-primary" name="button">Confirmar</button>
+            </div>
+        </form>
+        <div class=" alert-danger">
+            @ViewBag.ET
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
